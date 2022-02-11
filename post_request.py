@@ -18,7 +18,6 @@ SITES = [
 ]
 
 def add_site(name,slug):
-    api_token = Token
     headers = {'Authorization': 'Token a6582fd99e88413997670f5c9c3e29c2d8115089',
     'Content-Type':'application/json',
     'Accept':'application/json' }
