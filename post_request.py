@@ -3,8 +3,8 @@ import os
 from unicodedata import name
 from wsgiref import headers
 import requests
-netbox_ROOT = "https://178.74.59.186:4434"
-Token = {'Authorization':'Token a6582fd99e88413997670f5c9c3e29c2d8115089'} 
+netbox_ROOT = "https://IP:PORTnumber"
+Token = {'Authorization':'Token '} 
 Sites = "/api/dcim/sites/"
 
 SITES = [
@@ -18,7 +18,7 @@ SITES = [
 ]
 
 def add_site(name,slug):
-    headers = {'Authorization': 'Token a6582fd99e88413997670f5c9c3e29c2d8115089',
+    headers = {'Authorization': 'Token ',
     'Content-Type':'application/json',
     'Accept':'application/json' }
     data ={
